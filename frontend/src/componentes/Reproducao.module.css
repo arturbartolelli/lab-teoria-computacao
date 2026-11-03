@@ -1,0 +1,39 @@
+.reproducao {
+  display: grid;
+  gap: 14px;
+}
+
+.veredito {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+}
+
+.veredito strong {
+  font-size: 1.25rem;
+}
+
+.aceita strong {
+  color: var(--verde);
+  text-shadow: var(--brilho-verde);
+}
+
+.rejeitada strong {
+  color: var(--vermelho);
+  text-shadow: var(--brilho-vermelho);
+}
+
+.indeterminada strong {
+  color: var(--ambar);
+  text-shadow: var(--brilho-ambar);
+}
+
+.motivo {
+  color: var(--texto-fraco);
+}
+
+.proxima {
+  margin: 0;
+  color: var(--ambar);
+  font-size: 0.9rem;
+}

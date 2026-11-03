@@ -1,0 +1,18 @@
+.layout {
+  display: grid;
+  gap: 20px;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+@media (min-width: 960px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .layout > :first-child {
+    grid-column: 1 / -1;
+  }
+}

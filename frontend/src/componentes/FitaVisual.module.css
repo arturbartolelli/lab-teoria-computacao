@@ -1,0 +1,50 @@
+.fita {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 6px 4px 34px;
+  list-style: none;
+  overflow-x: auto;
+  border-top: 1px solid var(--borda);
+  border-bottom: 1px solid var(--borda);
+  background: repeating-linear-gradient(90deg, transparent 0 2px, rgb(57 255 136 / 3%) 2px 4px), var(--fundo);
+  scrollbar-color: var(--borda-forte) transparent;
+}
+
+.celula {
+  position: relative;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2.6em;
+  height: 2.6em;
+  margin-right: -1px;
+  border: 1px solid var(--borda-forte);
+  font-size: 1.1rem;
+}
+
+.branco .simbolo {
+  color: var(--texto-fraco);
+  opacity: 0.55;
+}
+
+.ativa {
+  z-index: 1;
+  border-color: var(--ambar);
+  background: rgb(255 181 71 / 12%);
+  box-shadow: var(--brilho-ambar);
+}
+
+.ativa .simbolo {
+  color: var(--ambar);
+  opacity: 1;
+  text-shadow: var(--brilho-ambar);
+}
+
+.cabecote {
+  position: absolute;
+  top: calc(100% + 4px);
+  white-space: nowrap;
+  font-size: 0.75rem;
+  color: var(--ambar);
+}

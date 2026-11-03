@@ -1,0 +1,36 @@
+.campo {
+  display: grid;
+  grid-template-columns: 9ch minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.rotulo {
+  display: flex;
+  justify-content: space-between;
+  color: var(--ambar);
+}
+
+.seta {
+  color: var(--verde);
+}
+
+.entrada {
+  width: 100%;
+  padding: 4px 0;
+  border: 0;
+  border-bottom: 1px dashed var(--borda-forte);
+  background: transparent;
+  caret-color: var(--verde);
+  caret-shape: block;
+}
+
+.entrada::placeholder {
+  color: var(--texto-fraco);
+  opacity: 0.6;
+}
+
+.entrada:focus {
+  outline: none;
+  border-bottom-color: var(--verde);
+}

@@ -1,0 +1,42 @@
+.log {
+  position: relative;
+  max-height: 220px;
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  overflow-y: auto;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--fundo);
+  scrollbar-color: var(--borda-forte) transparent;
+}
+
+.linha {
+  display: flex;
+  gap: 2ch;
+  width: 100%;
+  padding: 1px 10px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.linha:hover {
+  background: var(--painel-elevado);
+}
+
+.numero {
+  color: var(--texto-fraco);
+}
+
+.ativa {
+  background: rgb(255 181 71 / 12%);
+  color: var(--ambar);
+}
+
+.ativa::before {
+  content: '›';
+  margin-left: -1.5ch;
+  margin-right: -0.5ch;
+}

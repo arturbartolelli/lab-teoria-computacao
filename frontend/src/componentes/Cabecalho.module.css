@@ -1,0 +1,48 @@
+.cabecalho {
+  display: grid;
+  gap: 6px;
+}
+
+.logo {
+  margin: 0 0 8px;
+  font-size: clamp(18px, 5vw, 28px);
+  line-height: 1.1;
+  color: var(--verde);
+  text-shadow: var(--brilho-verde);
+}
+
+.prompt {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.usuario {
+  color: var(--verde);
+}
+
+.caminho {
+  color: var(--ambar);
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.1em;
+  margin-left: 4px;
+  vertical-align: text-bottom;
+  background: var(--verde);
+  box-shadow: var(--brilho-verde);
+  animation: piscar 1s steps(1) infinite;
+}
+
+.legenda {
+  margin: 0;
+  color: var(--texto-fraco);
+}
+
+@keyframes piscar {
+  50% {
+    opacity: 0;
+  }
+}

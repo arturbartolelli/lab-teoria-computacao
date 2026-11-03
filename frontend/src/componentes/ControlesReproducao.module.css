@@ -1,0 +1,35 @@
+.controles {
+  display: grid;
+  gap: 10px;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.linhaDoTempo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contador {
+  flex: 0 0 auto;
+  color: var(--texto-fraco);
+  font-size: 0.85rem;
+}
+
+.barra {
+  flex: 1;
+  min-width: 0;
+  accent-color: var(--verde);
+}
+
+.velocidade {
+  padding: 2px 4px;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--fundo);
+}

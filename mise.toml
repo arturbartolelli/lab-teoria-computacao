@@ -1,0 +1,42 @@
+[tools]
+java = "temurin-21"
+node = "24"
+
+[tasks."backend:dev"]
+description = "Sobe a API Spring Boot em http://localhost:8080"
+dir = "{{config_root}}/backend"
+run = "./gradlew bootRun"
+run_windows = '.\gradlew.bat bootRun'
+
+[tasks."backend:test"]
+description = "Roda os testes do backend"
+dir = "{{config_root}}/backend"
+run = "./gradlew test"
+run_windows = '.\gradlew.bat test'
+
+[tasks."frontend:install"]
+description = "Instala as dependências do frontend"
+dir = "{{config_root}}/frontend"
+sources = ["package.json", "package-lock.json"]
+outputs = ["node_modules/.package-lock.json"]
+run = "npm install"
+
+[tasks."frontend:dev"]
+description = "Sobe o frontend Vite em http://localhost:5173"
+dir = "{{config_root}}/frontend"
+depends = ["frontend:install"]
+run = "npm run dev"
+
+[tasks."frontend:test"]
+description = "Roda typecheck, lint e testes do frontend"
+dir = "{{config_root}}/frontend"
+depends = ["frontend:install"]
+run = ["npm run typecheck", "npm run lint", "npm test"]
+
+[tasks.dev]
+description = "Sobe backend e frontend em paralelo"
+depends = ["backend:dev", "frontend:dev"]
+
+[tasks.test]
+description = "Roda todos os testes"
+depends = ["backend:test", "frontend:test"]

@@ -1,0 +1,52 @@
+.janela {
+  min-width: 0;
+  border: 1px solid var(--borda-forte);
+  border-radius: var(--raio);
+  background: var(--painel);
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 60%),
+    0 12px 40px rgb(0 0 0 / 50%),
+    inset 0 0 60px rgb(57 255 136 / 3%);
+}
+
+.barra {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--borda);
+  background: var(--painel-elevado);
+}
+
+.luzes {
+  display: flex;
+  gap: 6px;
+}
+
+.luzes i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--borda-forte);
+}
+
+.luzes i:first-child {
+  background: var(--vermelho);
+}
+
+.luzes i:nth-child(2) {
+  background: var(--ambar);
+}
+
+.luzes i:last-child {
+  background: var(--verde);
+}
+
+.titulo {
+  color: var(--texto-fraco);
+  font-size: 0.85rem;
+}
+
+.conteudo {
+  padding: 16px;
+}

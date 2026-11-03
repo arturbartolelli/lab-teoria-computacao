@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lab-teoria-computacao
+    runtime: docker
+    plan: free
+    region: virginia
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    autoDeploy: true

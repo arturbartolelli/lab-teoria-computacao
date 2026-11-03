@@ -1,0 +1,82 @@
+:root {
+  --fundo: #070a08;
+  --painel: #0b110d;
+  --painel-elevado: #101a13;
+  --borda: #1d3325;
+  --borda-forte: #2d5a3d;
+  --texto: #b9f6ca;
+  --texto-fraco: #5d8a6b;
+  --verde: #39ff88;
+  --ambar: #ffb547;
+  --vermelho: #ff5f56;
+  --brilho-verde: 0 0 8px rgb(57 255 136 / 45%);
+  --brilho-ambar: 0 0 8px rgb(255 181 71 / 45%);
+  --brilho-vermelho: 0 0 8px rgb(255 95 86 / 45%);
+  --fonte: 'JetBrains Mono Variable', ui-monospace, 'Cascadia Code', Consolas, monospace;
+  --raio: 4px;
+
+  color-scheme: dark;
+  font-family: var(--fonte);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--texto);
+  background: var(--fundo);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top, rgb(57 255 136 / 6%), transparent 60%),
+    var(--fundo);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgb(0 0 0 / 18%) 0 1px, transparent 1px 3px);
+  z-index: 10;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+:focus-visible {
+  outline: 1px dashed var(--ambar);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--verde);
+  color: var(--fundo);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,49 @@
+.aviso {
+  margin: 0;
+  color: var(--texto-fraco);
+}
+
+.carregando {
+  margin: 0;
+  color: var(--ambar);
+}
+
+.carregando::after {
+  content: '';
+  animation: reticencias 900ms steps(4) infinite;
+}
+
+.erro {
+  color: var(--vermelho);
+  text-shadow: var(--brilho-vermelho);
+}
+
+.tituloErro {
+  margin: 0;
+}
+
+.detalhes {
+  margin: 8px 0 0;
+  padding-left: 2ch;
+  list-style: '› ';
+  color: var(--texto);
+  text-shadow: none;
+}
+
+@keyframes reticencias {
+  0% {
+    content: '';
+  }
+
+  25% {
+    content: '.';
+  }
+
+  50% {
+    content: '..';
+  }
+
+  75% {
+    content: '...';
+  }
+}
