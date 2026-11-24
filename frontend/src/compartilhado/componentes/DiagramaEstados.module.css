@@ -1,0 +1,61 @@
+.diagrama {
+  display: block;
+  width: 100%;
+  max-height: 380px;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--fundo);
+  font-family: var(--fonte);
+}
+
+.ponta {
+  fill: var(--borda-forte);
+}
+
+.pontaDestacada {
+  fill: var(--ambar);
+}
+
+.aresta path,
+.arestaDestacada path,
+.inicial {
+  fill: none;
+  stroke: var(--borda-forte);
+  stroke-width: 1.4;
+}
+
+.aresta text,
+.arestaDestacada text {
+  fill: var(--texto-fraco);
+  font-size: 11px;
+}
+
+.arestaDestacada path {
+  stroke: var(--ambar);
+  stroke-width: 2.2;
+}
+
+.arestaDestacada text {
+  fill: var(--ambar);
+}
+
+.no circle {
+  fill: var(--painel);
+  stroke: var(--verde);
+  stroke-width: 1.4;
+}
+
+.no text {
+  fill: var(--texto);
+  font-size: 12px;
+}
+
+.ativo circle {
+  fill: rgb(255 181 71 / 18%);
+  stroke: var(--ambar);
+  stroke-width: 2.2;
+}
+
+.ativo text {
+  fill: var(--ambar);
+}

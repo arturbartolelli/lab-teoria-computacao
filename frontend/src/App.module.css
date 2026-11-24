@@ -1,18 +1,27 @@
 .layout {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
-  width: min(1100px, 100%);
+  width: min(1240px, 100%);
   margin: 0 auto;
   padding: 32px 16px 48px;
 }
 
-@media (min-width: 960px) {
-  .layout {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    align-items: start;
-  }
+.modulo,
+.moduloLargo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
 
-  .layout > :first-child {
-    grid-column: 1 / -1;
+.modulo[hidden],
+.moduloLargo[hidden] {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .modulo {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }

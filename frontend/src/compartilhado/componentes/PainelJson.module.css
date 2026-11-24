@@ -1,0 +1,72 @@
+.painel {
+  border: 1px dashed var(--borda);
+  border-radius: var(--raio);
+  padding: 8px 12px;
+}
+
+.resumo {
+  cursor: pointer;
+  color: var(--ambar);
+}
+
+.painel[open] .resumo {
+  margin-bottom: 10px;
+}
+
+.dica {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--texto-fraco);
+  font-size: 0.85rem;
+}
+
+.texto {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--fundo);
+  color: var(--texto);
+  font: inherit;
+  font-size: 0.85rem;
+  resize: vertical;
+}
+
+.texto:focus {
+  outline: none;
+  border-color: var(--verde);
+}
+
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.arquivo {
+  padding: 4px 10px;
+  border: 1px solid var(--borda-forte);
+  border-radius: var(--raio);
+  cursor: pointer;
+}
+
+.arquivo::before {
+  content: '[ ';
+  color: var(--texto-fraco);
+}
+
+.arquivo::after {
+  content: ' ]';
+  color: var(--texto-fraco);
+}
+
+.arquivo:hover {
+  background: var(--texto);
+  color: var(--fundo);
+}
+
+.erro {
+  margin: 8px 0 0;
+  color: var(--vermelho);
+}

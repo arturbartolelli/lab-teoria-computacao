@@ -1,0 +1,37 @@
+.abas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  border-bottom: 1px solid var(--borda-forte);
+}
+
+.aba {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-radius: var(--raio) var(--raio) 0 0;
+  color: var(--texto-fraco);
+  text-decoration: none;
+}
+
+.aba:hover {
+  color: var(--texto);
+  background: var(--painel-elevado);
+}
+
+.ativa {
+  border-color: var(--borda-forte);
+  background: var(--painel);
+  color: var(--verde);
+  text-shadow: var(--brilho-verde);
+}
+
+.atalho {
+  padding: 0 4px;
+  border: 1px solid currentcolor;
+  border-radius: 2px;
+  font-size: 0.75rem;
+}

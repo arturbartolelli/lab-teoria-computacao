@@ -1,0 +1,29 @@
+.veredito {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  margin: 0;
+}
+
+.veredito strong {
+  font-size: 1.25rem;
+}
+
+.positivo strong {
+  color: var(--verde);
+  text-shadow: var(--brilho-verde);
+}
+
+.negativo strong {
+  color: var(--vermelho);
+  text-shadow: var(--brilho-vermelho);
+}
+
+.neutro strong {
+  color: var(--ambar);
+  text-shadow: var(--brilho-ambar);
+}
+
+.descricao {
+  color: var(--texto-fraco);
+}

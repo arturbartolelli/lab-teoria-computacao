@@ -1,0 +1,22 @@
+.entrada {
+  margin: 0;
+  color: var(--texto-fraco);
+  letter-spacing: 0.2em;
+  overflow-wrap: anywhere;
+}
+
+.lido {
+  color: var(--texto-fraco);
+  opacity: 0.6;
+}
+
+.atual {
+  padding: 0 2px;
+  border-bottom: 2px solid var(--ambar);
+  color: var(--ambar);
+  text-shadow: var(--brilho-ambar);
+}
+
+.pendente {
+  color: var(--texto);
+}

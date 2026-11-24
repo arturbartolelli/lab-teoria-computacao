@@ -1,0 +1,120 @@
+.reproducao {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.painel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: start;
+  padding: 12px;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--fundo);
+}
+
+.leitura {
+  display: grid;
+  gap: 8px;
+}
+
+.estado,
+.transicao {
+  margin: 0;
+  color: var(--texto-fraco);
+}
+
+.estado strong {
+  color: var(--ambar);
+  text-shadow: var(--brilho-ambar);
+}
+
+.transicao {
+  font-size: 0.85rem;
+}
+
+.pilha {
+  margin: 0;
+  min-width: 7ch;
+}
+
+.rotuloPilha {
+  margin-bottom: 4px;
+  color: var(--texto-fraco);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.celulas {
+  display: grid;
+  max-height: 220px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  border: 1px solid var(--borda-forte);
+  border-top: 0;
+}
+
+.celula,
+.topo,
+.vazia {
+  position: relative;
+  padding: 4px 10px;
+  border-top: 1px solid var(--borda-forte);
+  text-align: center;
+}
+
+.topo {
+  background: rgb(255 181 71 / 12%);
+  color: var(--ambar);
+  text-shadow: var(--brilho-ambar);
+}
+
+.vazia {
+  color: var(--texto-fraco);
+}
+
+.rolagem {
+  position: relative;
+  max-height: 240px;
+  overflow: auto;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.tabela th {
+  position: sticky;
+  top: 0;
+  padding: 4px 8px;
+  background: var(--painel-elevado);
+  color: var(--ambar);
+  font-weight: 500;
+  text-align: left;
+}
+
+.tabela td {
+  padding: 2px 8px;
+  border-top: 1px solid var(--borda);
+}
+
+.tabela tbody tr {
+  cursor: pointer;
+}
+
+.tabela tbody tr:hover {
+  background: var(--painel-elevado);
+}
+
+.linhaAtiva {
+  background: rgb(255 181 71 / 12%);
+  color: var(--ambar);
+}

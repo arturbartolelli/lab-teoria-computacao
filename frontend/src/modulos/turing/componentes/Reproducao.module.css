@@ -1,0 +1,22 @@
+.reproducao {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.fitaFinal {
+  overflow-wrap: anywhere;
+  margin: 0;
+  color: var(--texto-fraco);
+}
+
+.fitaFinal strong {
+  color: var(--texto);
+  letter-spacing: 0.1em;
+}
+
+.proxima {
+  margin: 0;
+  color: var(--ambar);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,93 @@
+.conteudo {
+  display: grid;
+  gap: 16px;
+}
+
+.legendas {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 900px) {
+  .legendas {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+}
+
+.notacoes {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+}
+
+.notacoes div {
+  display: flex;
+  gap: 12px;
+}
+
+.notacoes dt {
+  min-width: 5ch;
+  color: var(--verde);
+}
+
+.notacoes dd {
+  margin: 0;
+  color: var(--texto-fraco);
+}
+
+.variaveis {
+  margin: 0;
+  padding-left: 2ch;
+  color: var(--texto-fraco);
+  list-style: '› ';
+}
+
+.rolagem {
+  overflow-x: auto;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+}
+
+.tabela {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.tabela th {
+  padding: 6px 10px;
+  background: var(--painel-elevado);
+  color: var(--ambar);
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.tabela td {
+  padding: 8px 10px;
+  border-top: 1px solid var(--borda);
+  vertical-align: top;
+}
+
+.modulo {
+  color: var(--verde);
+  white-space: nowrap;
+}
+
+.implementacao {
+  display: block;
+  margin-top: 2px;
+  color: var(--texto-fraco);
+  font-size: 0.75rem;
+}
+
+.ordem {
+  color: var(--ambar);
+  white-space: nowrap;
+}
+
+.justificativa {
+  color: var(--texto-fraco);
+  line-height: 1.45;
+}
